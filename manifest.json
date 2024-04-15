@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "WeRead Extensions",
+    "description": "微信读书页面美化插件",
+    "version": "1.0",
+    "action": {
+        "default_icon": "popup/icon-default.png",
+        "default_popup": "popup/index.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "background.js"
+            ],
+            "matches": [
+                "https://weread.qq.com/web/reader/*"
+            ]
+        }
+    ]
+}
